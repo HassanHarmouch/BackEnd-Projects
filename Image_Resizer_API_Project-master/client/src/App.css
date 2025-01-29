@@ -1,0 +1,132 @@
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #009739, #fedf00);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container for the form */
+.container {
+  background: #002776;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  padding: 40px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  animation: fadeIn 0.6s ease-in-out;
+  color: #fff;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header Styles */
+h1 {
+  font-size: 28px;
+  color: #fedf00;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+/* Input Styles */
+input {
+  margin: 12px 0;
+  padding: 14px;
+  width: calc(100% - 28px);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+input:focus {
+  border-color: #fedf00;
+  box-shadow: 0 4px 8px rgba(254, 223, 0, 0.5);
+  outline: none;
+}
+
+/* Button Styles */
+button {
+  padding: 14px 20px;
+  background: linear-gradient(135deg, #ffcc29, #009739);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.2s;
+  width: 100%;
+  margin-top: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #009739, #002776);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* File Input Styling */
+input[type="file"] {
+  padding: 8px;
+  border: none;
+  background: #fedf00;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #002776;
+  cursor: pointer;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  padding: 8px 16px;
+  border: none;
+  background: #009739;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+  background: #002776;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .container {
+    padding: 24px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
