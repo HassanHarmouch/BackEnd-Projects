@@ -1,0 +1,147 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern font */
+  background-color: #f0f2f5; /* Soft light gray background for a modern look */
+  margin: 0;
+  padding: 0;
+  color: #4a4a4a; /* Dark gray text for readability */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  line-height: 1.5;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 450px;
+  margin: 20px;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Smooth shadow for depth */
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Header */
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: #2c3e50; /* Deep gray for professionalism */
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Spacious input gap for a clean layout */
+}
+
+/* Input */
+input[type="url"] {
+  width: 100%;
+  padding: 14px 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  background: #f7f7f7;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="url"]:focus {
+  outline: none;
+  border-color: #3498db; /* Professional blue */
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.4); /* Smooth focus transition */
+}
+
+/* Button */
+button {
+  padding: 14px 22px;
+  width: 100%;
+  background: linear-gradient(135deg, #2980b9, #3498db); /* Elegant blue gradient */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.2); /* Soft shadow effect */
+}
+
+button:hover {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  transform: translateY(-3px); /* Subtle lift effect */
+  box-shadow: 0 8px 20px rgba(52, 152, 219, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Short URL Section */
+.short-url {
+  margin-top: 40px;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.short-url h2 {
+  font-size: 1.6rem;
+  color: #34495e; /* Professional dark gray */
+  margin-bottom: 15px;
+}
+
+.short-url a {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #2980b9;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.2);
+}
+
+.short-url a:hover {
+  background: #3498db;
+  transform: translateY(-3px); /* Slight lift on hover */
+  box-shadow: 0 8px 20px rgba(52, 152, 219, 0.3);
+}
+
+/* Error Message */
+.error {
+  margin-top: 15px;
+  color: #e74c3c; /* Subtle red for error messages */
+  font-size: 1rem;
+  animation: shake 0.3s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(-4px);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
